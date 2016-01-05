@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class a1 {
+	public static void main(String args[]) {
+		System.out.println(" Y/N ");
+
+		Scanner sc = new Scanner(System.in);
+		while (true) {
+			String yn = sc.next();
+			if (yn.equals("y") || yn.equals("Y")){
+				System.out.println("yes");
+			} else if(yn.equals("n") || yn.equals("N")){ 
+				System.out.println("no");
+			} else{
+				System.err.println("?");
+			}
+		}
+	}
+}
